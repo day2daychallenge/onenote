@@ -1,0 +1,25 @@
+{
+  "name": "onenote-server",
+  "version": "1.0.0",
+  "description": "This project will handle all the client requests.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/day2daychallenge/onenote.git"
+  },
+  "keywords": [
+    "nodejs",
+    "server",
+    "onenote"
+  ],
+  "author": "Amir hatami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/day2daychallenge/onenote/issues"
+  },
+  "homepage": "https://github.com/day2daychallenge/onenote#readme"
+}
