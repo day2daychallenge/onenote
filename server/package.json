@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "npm install",
+    "start": "node server.js",
+    "server":"npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/day2daychallenge/onenote/issues"
   },
-  "homepage": "https://github.com/day2daychallenge/onenote#readme"
+  "homepage": "https://github.com/day2daychallenge/onenote#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
