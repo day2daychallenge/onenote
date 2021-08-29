@@ -21,7 +21,7 @@ function error(status, msg) {
 // therefore a path with prefixed "/api"  will cause middleware
 // to be invoked
 app.use('/api', function(req, res, next){
-    var key = req.query['authorization'];
+    var key = req.get('authorization');
 
     // key isn't present
     if (!key) return next(error(400, 'api key required'));
