@@ -57,7 +57,263 @@ Currently below api supported in server. we are using port 5000:
         -   Example:
             -   in header set authorization='amir'
             -   http://localhost:5000/api/user/?id=amir
-            -   http://localhost:5000/api/user/?id=amir&num=10
+                -   Output Sample:
+                    ```json
+                    {
+                        "headers": {
+                            "Access-Control-Allow-Origin": "*",
+                            "Access-Control-Allow-Headers": "*",
+                            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
+                            "Content-Type": "application/json"
+                        },
+                        "status": 200,
+                        "body": {
+                            "messageList": {
+                                "items": [
+                                    {
+                                        "id": 0,
+                                        "name": "amir",
+                                        "date": "1630609198600",
+                                        "message": "## Message 0 for amir.\n\n# The largest heading",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 6
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 8
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                    ```
+            -   http://localhost:5000/api/user/?id=ramin&num=10
+                -   Output Sample:
+                    ```json
+                    {
+                        "headers": {
+                            "Access-Control-Allow-Origin": "*",
+                            "Access-Control-Allow-Headers": "*",
+                            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
+                            "Content-Type": "application/json"
+                        },
+                        "status": 200,
+                        "body": {
+                            "messageList": {
+                                "items": [
+                                    {
+                                        "id": 0,
+                                        "name": "ramin",
+                                        "date": "1630609099029",
+                                        "message": "## Message 0 for ramin.\n\n# The largest heading",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 1
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 7
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 1,
+                                        "name": "ramin",
+                                        "date": "1630695499029",
+                                        "message": "## Message 1 for ramin.\n\n## The second largest heading\n###### The smallest heading",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 7
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 4
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 6
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 2,
+                                        "name": "ramin",
+                                        "date": "1630781899029",
+                                        "message": "## Message 2 for ramin.\n\n# onenote server\nThis project suppose to handle all the client request in local.\n\n# How to run onenote server\nIn order to run this server you need to make sure that node installed in your pc.",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 1
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 0
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 3,
+                                        "name": "ramin",
+                                        "date": "1630868299029",
+                                        "message": "## Message 3 for ramin.\n\n## Installation\n\nYou need to install [node](https://nodejs.org/en/download/) to run this project.\ninorder to make sure that your system has a node, please run the below command:\n\n```bash\nnode -v\n```\n",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 3
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 5
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 8
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 4,
+                                        "name": "ramin",
+                                        "date": "1630954699029",
+                                        "message": "## Message 4 for ramin.\n\n## How to use the API\n\nCurrently below api supported in server. we are using port 5000:\n\n1.  Hello OneNote\n    -   http://localhost:5000/      ***Type: GET***\n\n2.  All the API after ***/api*** require authorization code. you can set it by creating a header named ***authorization***\n    -   currently three value hardcoded for the testing purpose, later this value will be generated by AWS Cognito service.\n        -   amir-auth-code\n        -   ramin-auth-code\n        -   davod-auth-code\n",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 5
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 8
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 5,
+                                        "name": "ramin",
+                                        "date": "1631041099029",
+                                        "message": "## Message 5 for ramin.\n\n# The largest heading",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 6
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 0
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 6,
+                                        "name": "ramin",
+                                        "date": "1631127499029",
+                                        "message": "## Message 6 for ramin.\n\n## The second largest heading\n###### The smallest heading",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 3
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 2
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 7
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 7,
+                                        "name": "ramin",
+                                        "date": "1631213899029",
+                                        "message": "## Message 7 for ramin.\n\n# onenote server\nThis project suppose to handle all the client request in local.\n\n# How to run onenote server\nIn order to run this server you need to make sure that node installed in your pc.",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 1
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 3
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 8,
+                                        "name": "ramin",
+                                        "date": "1631300299029",
+                                        "message": "## Message 8 for ramin.\n\n## Installation\n\nYou need to install [node](https://nodejs.org/en/download/) to run this project.\ninorder to make sure that your system has a node, please run the below command:\n\n```bash\nnode -v\n```\n",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 1
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 0
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 6
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 9,
+                                        "name": "ramin",
+                                        "date": "1631386699029",
+                                        "message": "## Message 9 for ramin.\n\n## How to use the API\n\nCurrently below api supported in server. we are using port 5000:\n\n1.  Hello OneNote\n    -   http://localhost:5000/      ***Type: GET***\n\n2.  All the API after ***/api*** require authorization code. you can set it by creating a header named ***authorization***\n    -   currently three value hardcoded for the testing purpose, later this value will be generated by AWS Cognito service.\n        -   amir-auth-code\n        -   ramin-auth-code\n        -   davod-auth-code\n",
+                                        "emoji": [
+                                            {
+                                                "name": "smile",
+                                                "likes": 2
+                                            },
+                                            {
+                                                "name": "sad",
+                                                "likes": 1
+                                            },
+                                            {
+                                                "name": "angry",
+                                                "likes": 8
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                    ```
 5.  POST a message
     -   http://localhost:5000/api/      ***Type: POST***
 
